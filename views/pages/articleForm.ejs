@@ -1,0 +1,9 @@
+<% include('layout', { title: 'Create Article' }); %>
+    <h1>Create Article</h1>
+    <form action="/articles" method="POST">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" required>
+        <label for="content">Content:</label>
+        <textarea name="content" id="content" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+    </form>

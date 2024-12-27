@@ -1,0 +1,9 @@
+<% include('layout', { title: article.title }); %>
+    <h1>
+        <%= article.title %>
+    </h1>
+    <p>
+        <%= article.content %>
+    </p>
+    <p><small>By <%= article.author.username %></small></p>
+    <a href="/articles">Back to Articles</a>
